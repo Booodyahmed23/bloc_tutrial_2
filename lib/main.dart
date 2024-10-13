@@ -133,7 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           const SizedBox(height: 10),
           FloatingActionButton(
-            child: const Icon(Icons.local_pizza),
+            child: const Icon(Icons.lock),
             backgroundColor: Colors.orange[500], // Fixed Colors.orange usage
             onPressed: () {
               context.read<PizzaBloc>().add(RemovePizza(Pizza.pizzas[1]));
@@ -144,4 +144,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-  
